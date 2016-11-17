@@ -1,0 +1,16 @@
+{
+  "name": "react-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xremix <toni-hoffmann@xremix.de> (http://xremix.de)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-react": "^6.16.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  }
+}

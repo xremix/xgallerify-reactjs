@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://www.toni-hoffmann.com/styles/main.min.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+			color:#333333;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<h1>Hello Playground</h1>
+		<div id="react-app-container"></div>
+		<h1>Hello Playground</h1>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.0/react-dom.js"></script>
+	<script src="dist/app.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/* globals alert, React, $, ReactDOM, ImageGallery */
+		'use strict';
+		$(document).ready(function(){
+		
+				ReactDOM.render(
+					React.createElement(
+						ImageGallery, {
+							source: 'http://toni-hoffmann.com/api/flickr',
+							appTitle: 'This is the title'
+						}
+					), 
+					document.getElementById('react-app-container')
+				);
+			
+		});
+	</script>
+</body>
+</html>
