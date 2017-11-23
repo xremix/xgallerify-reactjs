@@ -5,7 +5,6 @@ var ImageModal = React.createClass({
 		var title = null;
 		var backgroundImage = null;
 
-
 		if(self.props.image){
 			image = <img className="customimagemodal-image" alt="Popup Image" src= {self.props.image.originalurl} />
 			title = <div className="customimagemodal-title">{self.props.image.title}</div>;
@@ -41,7 +40,8 @@ var Image = React.createClass({
 					{/* <img src={self.props.image.middleurl} data-originalurl={self.props.image.originalurl}/>  */}
 					<div className="title">{self.props.image.title}</div>
 				</a>
-			</div>)
+				</div>
+		)
 	}
 });
 
@@ -116,7 +116,7 @@ var ImageGallery = React.createClass({
 				<a href="#"  onClick={self.showAllImages}>More</a>
 				<ImageModal image={self.state.activeImage} close={this.closeModal}/>
 			</div>
-			);
+		);
 	}
 });
 window.ImageGallery = ImageGallery;
